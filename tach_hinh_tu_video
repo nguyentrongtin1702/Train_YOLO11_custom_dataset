@@ -1,0 +1,18 @@
+import cv2
+import os
+
+video_path = r'E:\FILE\Fall-detection-v1\DATA_VIDEO_TRAIN_YOLO11N\Video_fall_100\video_nga_new_8 - Trim186.avi'
+output_dir = r'E:\FILE\Fall-detection-v1\DATA_YOLO_JSON_TRAIN_NEW_Y\image_video_nga_1'
+
+cap = cv2.VideoCapture(video_path)
+frame_id = 0
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+    cv2.imwrite(f"{output_dir}/frame_video_nga_1_{frame_id:05d}.jpg", frame)
+    frame_id += 1
+
+cap.release()
+print("Tách xong video thành các frame.")
