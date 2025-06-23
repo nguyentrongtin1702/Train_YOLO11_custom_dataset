@@ -5,7 +5,7 @@
 -Second you click to connect
 
 #Prepare Dataset
-- create a foler name that is data
+- create a folder name that is data
 - upload your data ( please remember archrive this foler .zip)
 - Connect data from Drive to Google colab
 
